@@ -1,0 +1,11 @@
+id,name,category,description,province,district,tambon,latitude,longitude,price,contact_phone,contact_email
+1,Khon Kaen Silk Fabric,Textile,Traditional handwoven silk fabric with unique patterns,Khon Kaen,Mueang Khon Kaen,Nai Mueang,16.4419,102.8360,1500,043-123-456,silk@khonkaen.com
+2,Chiang Mai Coffee,Food & Beverage,Premium Arabica coffee beans grown in the mountains,Chiang Mai,Mae Taeng,Ban Luang,19.9205,98.9625,350,053-987-654,coffee@chiangmai.com
+3,Lampang Ceramic Rooster,Handicraft,Traditional ceramic rooster figurine with colorful glaze,Lampang,Mueang Lampang,Sob Tui,18.2888,99.4907,800,054-555-123,ceramic@lampang.com
+4,Phetchaburi Palm Sugar,Food & Beverage,Pure palm sugar made from coconut palm sap,Phetchaburi,Mueang Phetchaburi,Tha Rap,13.1110,99.9448,120,032-444-789,palmsugar@phetchaburi.com
+5,Nan Mulberry Paper,Handicraft,Handmade paper from mulberry bark with flower petals,Nan,Mueang Nan,Du Phong,18.7850,100.7783,95,054-777-888,paper@nan.com
+6,Sukhothai Sangkhalok Pottery,Handicraft,Ancient-style ceramic pottery with traditional glazing,Sukhothai,Mueang Sukhothai,Mueang Kao,17.0144,99.7036,650,055-666-999,pottery@sukhothai.com
+7,Udon Thani Mudmee Silk,Textile,Traditional ikat silk fabric with geometric patterns,Udon Thani,Mueang Udon Thani,Mak Khaeng,17.4138,102.7878,1200,042-333-111,mudmee@udonthani.com
+8,Prachinburi Rice Wine,Food & Beverage,Traditional rice wine fermented with local herbs,Prachinburi,Mueang Prachinburi,Na Mueang,14.0510,101.3677,280,037-222-555,ricewine@prachinburi.com
+9,Loei Cotton Scarf,Textile,Naturally dyed cotton scarf with indigo patterns,Loei,Mueang Loei,Kut Pong,17.4860,101.7223,450,042-888-444,scarf@loei.com
+10,Ratchaburi Floating Market Basket,Handicraft,Woven water hyacinth basket for traditional markets,Ratchaburi,Mueang Ratchaburi,Na Mueang,13.5288,99.8138,320,032-111-777,basket@ratchaburi.com
