@@ -1,0 +1,262 @@
+/* OTOP Thailand Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.controls {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.search-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.search-section input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    min-width: 200px;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.search-section button:hover {
+    background-color: #5a67d8;
+}
+
+.search-section button#clearBtn {
+    background-color: #e53e3e;
+}
+
+.search-section button#clearBtn:hover {
+    background-color: #c53030;
+}
+
+.filter-section {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filter-section select {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    min-width: 150px;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    height: 600px;
+}
+
+.map-container {
+    flex: 2;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-panel, .details-panel {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-panel {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.details-panel {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.info-panel h3, .details-panel h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+#productCount {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #666;
+}
+
+.product-item {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.product-item:hover {
+    background-color: #f8f9ff;
+    border-color: #667eea;
+    transform: translateY(-1px);
+}
+
+.product-item.selected {
+    background-color: #e6edff;
+    border-color: #667eea;
+}
+
+.product-name {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.product-category {
+    color: #667eea;
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+}
+
+.product-location {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.product-price {
+    color: #e53e3e;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.detail-section {
+    margin-bottom: 15px;
+}
+
+.detail-label {
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 5px;
+}
+
+.detail-value {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    background-color: #f8f9ff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.loading {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+.error {
+    color: #e53e3e;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .map-container {
+        height: 400px;
+    }
+    
+    .search-section {
+        flex-direction: column;
+    }
+    
+    .search-section input[type="text"] {
+        min-width: 100%;
+    }
+    
+    .filter-section {
+        flex-direction: column;
+    }
+    
+    .filter-section select {
+        min-width: 100%;
+    }
+}

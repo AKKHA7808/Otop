@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTOP Thailand - One Tambon One Product</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>OTOP Thailand</h1>
+            <p>Discover One Tambon One Product across Thailand</p>
+        </header>
+
+        <div class="controls">
+            <div class="search-section">
+                <input type="text" id="searchInput" placeholder="Search OTOP products...">
+                <button id="searchBtn">Search</button>
+                <button id="clearBtn">Clear</button>
+            </div>
+            
+            <div class="filter-section">
+                <select id="categoryFilter">
+                    <option value="">All Categories</option>
+                </select>
+                
+                <select id="provinceFilter">
+                    <option value="">All Provinces</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="info-panel">
+                    <h3>OTOP Products</h3>
+                    <div id="productCount">Loading products...</div>
+                    <div id="productList"></div>
+                </div>
+                
+                <div class="details-panel" id="detailsPanel" style="display: none;">
+                    <h3>Product Details</h3>
+                    <div id="productDetails"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Maps API -->
+    <!-- Note: Replace YOUR_API_KEY with a real Google Maps API key for production -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBroadcastkey123demo&callback=initMap&libraries=places">
+    </script>
+    
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
